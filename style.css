@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&subset=latin-ext');
+﻿@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&subset=latin-ext');
 @media only screen and (min-width: 950px) {
     header .header-banner {
             height: calc(100vh - 400px);        
@@ -51,6 +51,7 @@
     
 }
 
+/*sisse ja välja zoomides käitub banner valesti..*/
 header .header-banner {
     background-image: url("banner.jpg");
     width: 100%;
