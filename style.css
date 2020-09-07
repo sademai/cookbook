@@ -1,7 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&subset=latin-ext');
 @media only screen and (min-width: 950px) {
     header .header-banner {
-            height: calc(100vh - 400px);        
+            height: calc(100vh - 400px);    
         }   
 
         header h1 {
@@ -30,28 +30,23 @@
       margin: 0 80px;
     }
     
-    .gallery-header{
+    .gallery-header{ /*Sõna RETSEPTID ilmub vaid mobiiliversioonis */
         display: none;
     }
     
-    hr{
+    hr{ /* border vms ilmub vaid mobiiliversioonis*/
         display: none;
     }
     
-    /*ma kuidagi ei saanud paika seda, et sisse zoomides kaoks kokkade pilt ära... ta läheb hoopis originaalsuurusesse, aga ma täpselt ei saa aru, miks ta nii teeb, kui selle pildi atribuudid on pandud siia, @media alla*/
-    
-    .cooks-image img {
+    .cooks-image { /*pilt kokkadest on vaid desktop-versioonis */
+        background-image: url("cooks.jpg");
         width: 300px;
         height: 200px;
-    }
-    
-    .cooks-image{
-        margin: 10px;
-    }
-    
+        margin: 20px;
+        background-size: cover;
+    }    
 }
 
-/*sisse ja välja zoomides käitub banner valesti..*/
 header .header-banner {
     background-image: url("banner.jpg");
     width: 100%;
@@ -59,7 +54,7 @@ header .header-banner {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: table;
+    
 }
 
 header h1 {
